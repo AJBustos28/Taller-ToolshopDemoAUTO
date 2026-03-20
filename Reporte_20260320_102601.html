@@ -1,0 +1,1282 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Automation Report</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">Resultados de pruebas</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">20/3/2026 10:26:01</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Carrito</p>
+            <p class="text-sm">
+              <span>10:26:01</span> / <span>54753.85 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Carrito</h5>
+                  <span class='badge badge-success'>20/3/2026 10:26:01</span>
+                  <span class='badge badge-danger'>20/3/2026 10:26:56</span>
+                  <span class='badge badge-default'>54753.85 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:05</td>
+        <td>
+De la pagina incio a la login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:05</td>
+        <td>
+Digitando correo electronico asociado        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:05</td>
+        <td>
+Digitando contraseña        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:06</td>
+        <td>
+Enviamos los datos de login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:11</td>
+        <td>
+Volvemos a pagina inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:12</td>
+        <td>
+Se Ingresa al producto de 'Bolt Cutters'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:14</td>
+        <td>
+Se añade el producto al carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:19</td>
+        <td>
+Volvemos a pagina inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:20</td>
+        <td>
+Se Ingresa al producto de 'Hammer'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:21</td>
+        <td>
+Se añade el producto al carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:26</td>
+        <td>
+Volvemos a pagina inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:28</td>
+        <td>
+Dirigmos al listado de productos 4        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:30</td>
+        <td>
+Se Ingresa al producto de 'Gloves'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:31</td>
+        <td>
+Se añade el producto al carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:36</td>
+        <td>
+Volvemos a pagina inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:39</td>
+        <td>
+Dirigmos al listado de productos 5        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:41</td>
+        <td>
+Se Ingresa al producto de 'Drill'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:42</td>
+        <td>
+Se añade el producto al carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:47</td>
+        <td>
+Volvemos a pagina inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:49</td>
+        <td>
+Dirigmos a la pagina del carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:54</td>
+        <td>
+Se cambia la cantidad de productos en el carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:26:56</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:26:56</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102656.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102656.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ContactoTest</p>
+            <p class="text-sm">
+              <span>10:27:01</span> / <span>25989.99 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">ContactoTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:27:01</span>
+                  <span class='badge badge-danger'>20/3/2026 10:27:27</span>
+                  <span class='badge badge-default'>25989.99 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:07</td>
+        <td>
+Dirigimos a pagina Contacto        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:08</td>
+        <td>
+Digitamos el nombre en el campo nombre        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:08</td>
+        <td>
+Digitamos el apellido en el campo apellido        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:08</td>
+        <td>
+Digitamos el correo en el campo correo        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:10</td>
+        <td>
+Elegimos el asunto del mensaje        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:10</td>
+        <td>
+Digitamos la razon/descripción del mensaje        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:12</td>
+        <td>
+Enviamos el mensaje        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:14</td>
+        <td>
+Dirigimos a la pagina login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:15</td>
+        <td>
+Digitamos el correo de usuario admin        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:15</td>
+        <td>
+Digitamos la contraseña de usuario admin        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:27</td>
+        <td>
+Revisamos la existencia del mensaje realizado        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:27:27</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:27</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102727.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102727.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FavoritoTest</p>
+            <p class="text-sm">
+              <span>10:27:28</span> / <span>23993.9 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">FavoritoTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:27:28</span>
+                  <span class='badge badge-danger'>20/3/2026 10:27:52</span>
+                  <span class='badge badge-default'>23993.9 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:31</td>
+        <td>
+Dirigimos a la pagina de login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:31</td>
+        <td>
+Dirigimos a la pagina de login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:32</td>
+        <td>
+Ingresamos el correo asociado al cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:32</td>
+        <td>
+Ingresamos la contraseña asociada al cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:32</td>
+        <td>
+Enviamos los datos        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:37</td>
+        <td>
+Volvemos a la pagina de inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:39</td>
+        <td>
+Dirigimos al listado de productos 4        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:40</td>
+        <td>
+Elegimos el producto        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:42</td>
+        <td>
+Añadimos el producto a favoritos mediante el botón        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:45</td>
+        <td>
+Volvemos a la pagina de inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:47</td>
+        <td>
+Abrimos menu de usuario        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:48</td>
+        <td>
+Dirigimos a la pagina de favoritos        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:27:51</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:52</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102751.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102751.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BusquedaTest</p>
+            <p class="text-sm">
+              <span>10:27:52</span> / <span>12827.25 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">BusquedaTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:27:52</span>
+                  <span class='badge badge-danger'>20/3/2026 10:28:05</span>
+                  <span class='badge badge-default'>12827.25 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:57</td>
+        <td>
+Ingresamos Hammer en la barra de busqueda        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:27:57</td>
+        <td>
+Se realiza la busqueda        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:02</td>
+        <td>
+Limpiamos la barra de busqueda        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:28:04</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:05</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102804.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102804.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FiltroCategoriaTest</p>
+            <p class="text-sm">
+              <span>10:28:05</span> / <span>18983.48 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">FiltroCategoriaTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:28:05</span>
+                  <span class='badge badge-danger'>20/3/2026 10:28:24</span>
+                  <span class='badge badge-default'>18983.48 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:09</td>
+        <td>
+Seleccionamos la categoria Pliers        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:11</td>
+        <td>
+Quitamos la seleccion de la categoria Pliers        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:13</td>
+        <td>
+Seleccionamos la categoria Drill        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:15</td>
+        <td>
+Quitamos la seleccion de la categoria Drill        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:17</td>
+        <td>
+Seleccionamos la marca ForgeFlex Tools        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:19</td>
+        <td>
+Quitamos la seleccion de la marca ForgeFlex Tools        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:20</td>
+        <td>
+Seleccionamos la categoria de productos ecológicos        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:22</td>
+        <td>
+Seleccionamos la categoria de productos ecológicos        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:28:23</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:24</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102823.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102823.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FiltroPrecioTest</p>
+            <p class="text-sm">
+              <span>10:28:24</span> / <span>12197.22 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">FiltroPrecioTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:28:24</span>
+                  <span class='badge badge-danger'>20/3/2026 10:28:36</span>
+                  <span class='badge badge-default'>12197.22 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:32</td>
+        <td>
+Movemos 40 pixeles el filtro de precio mínimo        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:33</td>
+        <td>
+Movemos 80 pixeles el filtro de precio máximo        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:28:36</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:36</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102836.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102836.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginAdmin</p>
+            <p class="text-sm">
+              <span>10:28:36</span> / <span>9287 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginAdmin</h5>
+                  <span class='badge badge-success'>20/3/2026 10:28:36</span>
+                  <span class='badge badge-danger'>20/3/2026 10:28:45</span>
+                  <span class='badge badge-default'>9287 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:44</td>
+        <td>
+Digitamos el correo y contraseña relacionado al usuario administrador        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:28:45</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:45</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102845.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102845.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginCliente</p>
+            <p class="text-sm">
+              <span>10:28:46</span> / <span>9381.9 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginCliente</h5>
+                  <span class='badge badge-success'>20/3/2026 10:28:46</span>
+                  <span class='badge badge-danger'>20/3/2026 10:28:55</span>
+                  <span class='badge badge-default'>9381.9 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:53</td>
+        <td>
+Digitamos el correo y contraseña relacionado al usuario cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:28:55</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:28:55</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102855.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102855.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginIncorrecto</p>
+            <p class="text-sm">
+              <span>10:28:55</span> / <span>9653.62 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginIncorrecto</h5>
+                  <span class='badge badge-success'>20/3/2026 10:28:55</span>
+                  <span class='badge badge-danger'>20/3/2026 10:29:05</span>
+                  <span class='badge badge-default'>9653.62 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:03</td>
+        <td>
+Digitamos el correo y una contraseña incorrecta del usuario administrador        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:29:05</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:05</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102905.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_102905.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">PagosTest</p>
+            <p class="text-sm">
+              <span>10:29:05</span> / <span>58296.78 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">PagosTest</h5>
+                  <span class='badge badge-success'>20/3/2026 10:29:05</span>
+                  <span class='badge badge-danger'>20/3/2026 10:30:03</span>
+                  <span class='badge badge-default'>58296.78 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:09</td>
+        <td>
+Digitamos el email asociado a cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:09</td>
+        <td>
+Digitamos la contraseña asociada al cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:09</td>
+        <td>
+Iniciamos sesión como cliente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:14</td>
+        <td>
+Volvemos a pagina de inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:18</td>
+        <td>
+Seleccionamos el producto        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:19</td>
+        <td>
+Añadimos el producto a carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:22</td>
+        <td>
+Volvemos a la pagina de inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:23</td>
+        <td>
+Seleccionamos el producto        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:25</td>
+        <td>
+Añadimos el producto a carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:28</td>
+        <td>
+Volvemos a la pagina de inicio        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:31</td>
+        <td>
+Vamos a la pagina de carrito        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:34</td>
+        <td>
+Continuamos del carrito a pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:35</td>
+        <td>
+Continuamos a pago de verificación de login        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:37</td>
+        <td>
+Digitamos la calle de la dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:37</td>
+        <td>
+Digitamos la ciudad de la dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:37</td>
+        <td>
+Digitamos el estado de la dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:37</td>
+        <td>
+Digitamos el país de la dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:37</td>
+        <td>
+Digitamos el código postal de la dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:39</td>
+        <td>
+Continuamos a pago de dirección de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:41</td>
+        <td>
+Abrimos las opciones de método de pago        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:44</td>
+        <td>
+Seleccionamos la opción: compro ahora pago después        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:46</td>
+        <td>
+Abrimos las opciones de cuotas mensuales        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:48</td>
+        <td>
+Seleccionamos la cuota mensual de 9 meses        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:51</td>
+        <td>
+Confirmamos la compra        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:54</td>
+        <td>
+Volvemos a confirmar la compra        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:57</td>
+        <td>
+Abrimos el menu de usuario        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:29:58</td>
+        <td>
+Verificamos la factura por calle y fecha        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>mar 20, 2026 10:30:03</td>
+        <td>
+Prueba aprobada correctamente        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>mar 20, 2026 10:30:03</td>
+        <td>
+Evidencia de prueba aprobada
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_103003.png' src="C:\Users\aarón.bustos\source\repos\ToolshopDemoAUTO\ToolshopDemoAUTO\bin\Debug\net10.0\screenshots\SS_20260320_103003.png">
+  </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>20/3/2026 10:26:01</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>20/3/2026 10:30:03</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>10</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'>
+            <b>10</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>10</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> events failed, 
+            <b data-tooltip='%'>97</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "Carrito":54753.8495,"ContactoTest":25989.9871,"FavoritoTest":23993.901,"BusquedaTest":12827.2508,"FiltroCategoriaTest":18983.4819,"FiltroPrecioTest":12197.2199,"LoginAdmin":9286.9978,"LoginCliente":9381.9004,"LoginIncorrecto":9653.6192,"PagosTest":58296.7771 };
+  </script>
+  <div class="row">
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 10,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 107,
+
+passParent:10,failParent:0,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:10,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:97,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
