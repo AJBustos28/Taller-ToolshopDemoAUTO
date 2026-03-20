@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using ToolshopDemoAUTO.Reportes;
 
 namespace ToolshopDemoAUTO.PageObject.LoginPage
 {
@@ -10,7 +11,7 @@ namespace ToolshopDemoAUTO.PageObject.LoginPage
         private By tbxEmail = By.Id("email");
         private By tbxPassword = By.Id("password");
         private By btnSubmit = By.XPath("//input[@value='Iniciar sesión']");
-        private By pageLogin = By.XPath("//a[normalize-space()='Sign in']");
+        private By pageLogin = By.LinkText("Iniciar sesión");
 
 
         public LoginPage(IWebDriver driver) : base(driver) { }
@@ -18,6 +19,7 @@ namespace ToolshopDemoAUTO.PageObject.LoginPage
         public void GoToLogin()
         {
             _driver.Navigate().GoToUrl(homeUrl);
+            Thread.Sleep(2000);
             ClickElement(pageLogin);
         }
 

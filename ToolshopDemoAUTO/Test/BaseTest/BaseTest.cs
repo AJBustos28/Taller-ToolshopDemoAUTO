@@ -30,10 +30,17 @@ namespace ToolshopDemoAUTO.Test.BaseTest
             if (result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed)
             {
                 ExtentReportManager.LogFail(result.Message);
-                ExtentReportManager.LogScreenshot(Driver, "Error");
+                ExtentReportManager.LogScreenshot(Driver, "Error en la prueba");
             }
+            else if (result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Passed)
+            {
+                ExtentReportManager.LogPass("Prueba aprobada correctamente");
+                ExtentReportManager.LogScreenshot(Driver, "Evidencia de prueba aprobada");
+            }
+
+            try { Driver.Dispose(); } catch { }
+
             ExtentReportManager.Flush();
-            Driver.Dispose();
         }
     }
 }

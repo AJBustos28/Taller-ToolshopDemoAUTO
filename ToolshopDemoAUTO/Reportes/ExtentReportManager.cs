@@ -15,10 +15,17 @@ namespace ToolshopDemoAUTO.Reportes
         {
             if (extent == null)
             {
-                string reportPath = Path.Combine(
-                    AppDomain.CurrentDomain.BaseDirectory,
-                    "Reporte.html"
+
+                string reportRoot = Path.Combine(
+                    Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName,
+                    "Reportes"
                 );
+
+                Directory.CreateDirectory(reportRoot);
+
+                string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string reportPath = Path.Combine(reportRoot, $"Reporte_{timestamp}.html");
+
 
                 var spark = new ExtentSparkReporter(reportPath);
                 spark.Config.DocumentTitle = "Automation Report";
@@ -37,21 +44,11 @@ namespace ToolshopDemoAUTO.Reportes
             return test;
         }
 
-        public static void LogInfo(string mensaje)
-        {
-            test.Info(mensaje);
-        }
+        public static void LogInfo(string mensaje) => test.Info(mensaje);
 
-        public static void LogPass(string mensaje)
-        {
-            test.Pass(mensaje);
-        }
+        public static void LogPass(string mensaje) => test.Pass(mensaje);
 
-        public static void LogFail(string mensaje)
-        {
-            test.Fail(mensaje);
-        }
-
+        public static void LogFail(string mensaje) => test.Fail(mensaje);
 
         public static void LogScreenshot(IWebDriver driver, string mensaje = "Screenshot")
         {

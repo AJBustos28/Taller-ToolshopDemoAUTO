@@ -9,7 +9,7 @@ namespace ToolshopDemoAUTO.Test.FavoritosTest
         public void FavoritoTest()
         {
             var FavoritosPage = new FavoritosPage(Driver);
-            FavoritosPage.FlujoFavoritos();
+            FavoritosPage.FlujoFavoritos("customer2@practicesoftwaretesting.com", "welcome01");
         }
     }
 }

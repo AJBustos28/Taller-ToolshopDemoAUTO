@@ -1,28 +1,30 @@
 ﻿using OpenQA.Selenium;
+using ToolshopDemoAUTO.PageObject.LoginPage;
+using ToolshopDemoAUTO.Reportes;
 
 namespace ToolshopDemoAUTO.PageObject.CarritoPage
 {
     public class CarritoPage : BasePage.BasePage
     {
         private readonly string homeUrl = "https://practicesoftwaretesting.com/#/";
-        private By pageHome = By.XPath("//a[normalize-space()='Home']");
+        private By pageHome = By.LinkText("Inicio");
 
 
         //Selectores para login
         private By tbxEmail = By.Id("email");
         private By tbxPassword = By.Id("password");
         private By btnSubmit = By.XPath("//input[@value='Iniciar sesión']");
-        private By pageLogin = By.XPath("//a[normalize-space()='Sign in']");
+        private By pageLogin = By.LinkText("Iniciar sesión");
         //Selectores para el carrito
-        private By selectBoltCutters = By.CssSelector(".card[data-test='product-01KKWAKZ4PGT3HBBNK6PFPCG6C']");
+        private By selectBoltCutters = By.XPath("/html/body/app-root/div[2]/app-overview/div[3]/div[2]/div[1]/a[3]");
         private By addCart = By.Id("btn-add-to-cart");
-        private By selectHammer = By.CssSelector(".card[data-test='product-01KKWAKZ5G9NHPY86GAHVEJ2EA']");
-        private By productList4 = By.XPath("//a[normalize-space()='4']");
-        private By selectGloves = By.CssSelector(".card[data-test='product-01KKVJJVZ2X0BRFZ6QGSWV0NV6']");
-        private By productList5 = By.XPath("//a[normalize-space()='5']");
-        private By selectDrill = By.CssSelector(".card[data-test='product-01KKWAKZ9BS643TGHXK13VG0SE']");
-        private By pageCarrito = By.CssSelector("a[aria-label='cart']");
-        private By tbxCantidadProdto = By.XPath("");
+        private By selectHammer = By.XPath("/html/body/app-root/div[2]/app-overview/div[3]/div[2]/div[1]/a[7]");
+        private By productList4 = By.LinkText("4");
+        private By selectGloves = By.XPath("/html/body/app-root/div[2]/app-overview/div[3]/div[2]/div[1]/a[1]");
+        private By productList5 = By.LinkText("5");
+        private By selectDrill = By.XPath("/html/body/app-root/div[2]/app-overview/div[3]/div[2]/div[1]/a[8]");
+        private By pageCarrito = By.XPath("//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a");
+        private By tbxCantidadProdto = By.Id("quantity-01km4srvtscn5vhc6w2338webv");
 
         public CarritoPage(IWebDriver driver) : base(driver) { }
 
@@ -48,13 +50,16 @@ namespace ToolshopDemoAUTO.PageObject.CarritoPage
             ClickElement(btnSubmit);
         }
 
-        public void Login()
+        public void Login(string email, string password)
         {
             GoToLogin();
-            EnterEmail("customer@practicesoftwaretesting.com");
-            EnterPassword("welcome01");
+            ExtentReportManager.LogInfo("De la pagina incio a la login");
+            EnterEmail(email);
+            ExtentReportManager.LogInfo("Digitando correo electronico asociado");
+            EnterPassword(password);
+            ExtentReportManager.LogInfo("Digitando contraseña");
             ClickSumbit();
-            ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Enviamos los datos de login");
         }
 
         public void EnterCantidadProducto(string cantidad)
@@ -63,24 +68,53 @@ namespace ToolshopDemoAUTO.PageObject.CarritoPage
             _driver.FindElement(By.XPath("//input[@id='quantity-01kkx26qgs9er776mxmx83sy4n']")).SendKeys(cantidad);
         }
 
-        public void FlujoCarrito()
+        public void FlujoCarrito(string email, string password,string cantidad)
         {
+            Login(email, password);
+            Thread.Sleep(5000);
+            ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina inicio");
             ClickElement(selectBoltCutters);
+            ExtentReportManager.LogInfo("Se Ingresa al producto de 'Bolt Cutters'");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Se añade el producto al carrito");
+            Thread.Sleep(5000);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina inicio");
             ClickElement(selectHammer);
+            ExtentReportManager.LogInfo("Se Ingresa al producto de 'Hammer'");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Se añade el producto al carrito");
+            Thread.Sleep(5000);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina inicio");
             ClickElement(productList4);
+            ExtentReportManager.LogInfo("Dirigmos al listado de productos 4");
+            Thread.Sleep(2000);
             ClickElement(selectGloves);
+            ExtentReportManager.LogInfo("Se Ingresa al producto de 'Gloves'");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Se añade el producto al carrito");
+            Thread.Sleep(5000);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina inicio");
+            Thread.Sleep(3000);
             ClickElement(productList5);
+            ExtentReportManager.LogInfo("Dirigmos al listado de productos 5");
+            Thread.Sleep(2000);
             ClickElement(selectDrill);
+            ExtentReportManager.LogInfo("Se Ingresa al producto de 'Drill'");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Se añade el producto al carrito");
+            Thread.Sleep(5000);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina inicio");
             ClickElement(pageCarrito);
-            EnterCantidadProducto("3");
+            ExtentReportManager.LogInfo("Dirigmos a la pagina del carrito");
+            Thread.Sleep(5000);
+            EnterCantidadProducto(cantidad);
+            ExtentReportManager.LogInfo("Se cambia la cantidad de productos en el carrito");
+            Thread.Sleep(1500);
         }
     }
 }

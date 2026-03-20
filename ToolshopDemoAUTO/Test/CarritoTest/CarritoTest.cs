@@ -9,7 +9,7 @@ namespace ToolshopDemoAUTO.Test.CarritoTest
         public void Carrito()
         {
             var CarritoPage = new CarritoPage(Driver);
-            CarritoPage.FlujoCarrito();
+            CarritoPage.FlujoCarrito("customer@practicesoftwaretesting.com", "welcome01", "3");
 
         }
     }

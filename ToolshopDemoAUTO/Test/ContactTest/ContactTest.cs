@@ -9,7 +9,7 @@ namespace ToolshopDemoAUTO.Test.ContactTest
         public void ContactoTest()
         {
             var ContactPage = new ContactPage(Driver);
-            ContactPage.FullContacto("Josue", "Peralta", "jptesting@gmail.com", "Garantía","Mi pedido llego roto y no funciona, quiero una devolución"); 
+            ContactPage.FullContacto("Josue", "Peralta", "jptesting@gmail.com", "Garantía","Mi pedido llego roto y no funciona, quiero una devolución", "admin@practicesoftwaretesting.com", "welcome01"); 
             //Opciones de asunto: Atención al cliente, Webmaster, Devolución, Pagos, Garantía, Estado de mi pedido
         }
     }
