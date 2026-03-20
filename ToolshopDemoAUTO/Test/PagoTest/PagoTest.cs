@@ -9,7 +9,7 @@ namespace ToolshopDemoAUTO.Test.PagoTest
         public void PagosTest()
         {
             var PagoPage = new PagoPage(Driver);
-            PagoPage.FlujoPago("customer2@practicesoftwaretesting.com","welcome01","Rodeo Drive", "Los Angeles", "California", "USA", "90210");
+            PagoPage.FlujoPago("customer@practicesoftwaretesting.com","welcome01","Rodeo Drive", "Los Angeles", "California", "USA", "90210");
         }
     }
 }

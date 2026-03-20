@@ -24,7 +24,10 @@ namespace ToolshopDemoAUTO.PageObject.CarritoPage
         private By productList5 = By.LinkText("5");
         private By selectDrill = By.XPath("/html/body/app-root/div[2]/app-overview/div[3]/div[2]/div[1]/a[8]");
         private By pageCarrito = By.XPath("//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a");
-        private By tbxCantidadProdto = By.Id("quantity-01km4srvtscn5vhc6w2338webv");
+        //private By tbxCantidadProdto = By.Id("quantity-01km4srvtscn5vhc6w2338webv");
+        private By tbxCantidadProdto = By.CssSelector("input[data-test='product-quantity']");
+
+
 
         public CarritoPage(IWebDriver driver) : base(driver) { }
 
@@ -65,7 +68,7 @@ namespace ToolshopDemoAUTO.PageObject.CarritoPage
         public void EnterCantidadProducto(string cantidad)
         {
             WaitforElement(tbxCantidadProdto).Clear();
-            _driver.FindElement(By.XPath("//input[@id='quantity-01kkx26qgs9er776mxmx83sy4n']")).SendKeys(cantidad);
+            _driver.FindElement(By.CssSelector("input[data-test='product-quantity']")).SendKeys(cantidad);
         }
 
         public void FlujoCarrito(string email, string password,string cantidad)
