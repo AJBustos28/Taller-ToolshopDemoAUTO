@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using System.Security.Authentication;
 using ToolshopDemoAUTO.Reportes;
 
 namespace ToolshopDemoAUTO.PageObject.FavoritosPage
@@ -71,8 +72,11 @@ namespace ToolshopDemoAUTO.PageObject.FavoritosPage
             ExtentReportManager.LogInfo("Elegimos el producto");
             Thread.Sleep(1500);
             ClickElement(btnFavorito);
-            ExtentReportManager.LogInfo("Añadimos el producto a favoritos mediante el ´botón");
-            Thread.Sleep(2000);
+            ExtentReportManager.LogInfo("Añadimos el producto a favoritos mediante el botón");
+            Thread.Sleep(2500);
+            ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a la pagina de inicio");
+            Thread.Sleep(2500);
             ClickElement(menuCliente);
             ExtentReportManager.LogInfo("Abrimos menu de usuario");
             Thread.Sleep(1000);

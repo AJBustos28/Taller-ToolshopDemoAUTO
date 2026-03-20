@@ -43,29 +43,42 @@ namespace ToolshopDemoAUTO.PageObject.PagoPage
             _driver.Navigate().GoToUrl(homeUrl);
             ClickElement(pageLogin);
             Wait.Until(ExpectedConditions.ElementIsVisible(tbxEmail)).SendKeys(email);
+            ExtentReportManager.LogInfo("Digitamos el email asociado a cliente");
             _driver.FindElement(tbxPassword).SendKeys(password);
+            ExtentReportManager.LogInfo("Digitamos la contraseña asociada al cliente");
             ClickElement(btnSubmit);
+            ExtentReportManager.LogInfo("Iniciamos sesión como cliente");
             Thread.Sleep(5000);
             Wait.Until(ExpectedConditions.ElementIsVisible(pageHome));
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a pagina de inicio");
         }
         // Carrito
         public void LlenarCarrito()
         {
             ClickElement(selectBoltCutters);
+            ExtentReportManager.LogInfo("Seleccionamos el producto");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Añadimos el producto a carrito");
             Thread.Sleep(2500);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a la pagina de inicio");
             ClickElement(selectHammer);
+            ExtentReportManager.LogInfo("Seleccionamos el producto");
             ClickElement(addCart);
+            ExtentReportManager.LogInfo("Añadimos el producto a carrito");
             Thread.Sleep(3000);
             ClickElement(pageHome);
+            ExtentReportManager.LogInfo("Volvemos a la pagina de inicio");
             Thread.Sleep(3000);
             ClickElement(pageCarrito);
+            ExtentReportManager.LogInfo("Vamos a la pagina de carrito");
             Thread.Sleep(2500);
             Wait.Until(ExpectedConditions.ElementToBeClickable(btnCheckout1)).Click();
+            ExtentReportManager.LogInfo("Continuamos del carrito a pago");
             Thread.Sleep(1500);
             Wait.Until(ExpectedConditions.ElementToBeClickable(btnCheckout2)).Click();
+            ExtentReportManager.LogInfo("Continuamos a pago de verificación de login");
             Thread.Sleep(1500);
         }
         // Dirección de pago
@@ -74,31 +87,39 @@ namespace ToolshopDemoAUTO.PageObject.PagoPage
             IWebElement calle = Wait.Until(ExpectedConditions.ElementIsVisible(tbxCalle));
             calle.Clear();
             calle.SendKeys(street);
+            ExtentReportManager.LogInfo("Digitamos la calle de la dirección de pago");
 
             IWebElement ciudad = _driver.FindElement(tbxCiudad);
             ciudad.Clear();
             ciudad.SendKeys(city);
+            ExtentReportManager.LogInfo("Digitamos la ciudad de la dirección de pago");
 
             IWebElement estado = _driver.FindElement(tbxEstado);
             estado.Clear();
             estado.SendKeys(state);
+            ExtentReportManager.LogInfo("Digitamos el estado de la dirección de pago");
 
             IWebElement pais = _driver.FindElement(tbxPais);
             pais.Clear();
             pais.SendKeys(country);
+            ExtentReportManager.LogInfo("Digitamos el país de la dirección de pago");
 
             IWebElement codPostal = _driver.FindElement(tbxCodPostal);
             codPostal.Clear();
             codPostal.SendKeys(postal_code);
+            ExtentReportManager.LogInfo("Digitamos el código postal de la dirección de pago");
 
             Thread.Sleep(2000);
             Wait.Until(ExpectedConditions.ElementToBeClickable(btnCheckout3)).Click();
+            ExtentReportManager.LogInfo("Continuamos a pago de dirección de pago");
             Thread.Sleep(2000);
+
         }
         // Método de pago
         public void SeleccionarMetodoPago()
         {
             ClickElement(drpdwnMetodoPago);
+            ExtentReportManager.LogInfo("Abrimos las opciones de método de pago");
             IWebElement dropdown = Wait.Until(ExpectedConditions.ElementIsVisible(drpdwnMetodoPago));
             Wait.Until(d => new SelectElement(dropdown).Options.Count > 1);
             SelectElement select = new SelectElement(dropdown);
@@ -111,19 +132,21 @@ namespace ToolshopDemoAUTO.PageObject.PagoPage
                     break;
                 }
             }
+            ExtentReportManager.LogInfo("Seleccionamos la opción: compro ahora pago después");
             ClickElement(drpdwnMetodoPago);
             Thread.Sleep(2000);
-            ExtentReportManager.LogInfo("Seleccionamos el metodo de pago");
+            
         }
         public void SeleccionarCuotaMensual()
         {
             ClickElement(drpdwnCuotasMensual);
+            ExtentReportManager.LogInfo("Abrimos las opciones de cuotas mensuales");
             IWebElement dropdown = Wait.Until(ExpectedConditions.ElementIsVisible(drpdwnCuotasMensual));
             SelectElement select = new SelectElement(dropdown);
             Thread.Sleep(2000);
             select.SelectByValue("9");
             ClickElement(drpdwnCuotasMensual);
-            ExtentReportManager.LogInfo("Seleccionamos la cuota mensual");
+            ExtentReportManager.LogInfo("Seleccionamos la cuota mensual de 9 meses");
         }
         // Pago
         public void RealizarPago()
@@ -132,12 +155,16 @@ namespace ToolshopDemoAUTO.PageObject.PagoPage
             SeleccionarCuotaMensual();
             Thread.Sleep(3000);
             Wait.Until(ExpectedConditions.ElementToBeClickable(btnConfirmPago)).Click();
+            ExtentReportManager.LogInfo("Confirmamos la compra");
             Thread.Sleep(3000);
             Wait.Until(ExpectedConditions.ElementToBeClickable(btnConfirmPago)).Click();
+            ExtentReportManager.LogInfo("Volvemos a confirmar la compra");
             Thread.Sleep(2500);
             Wait.Until(ExpectedConditions.ElementToBeClickable(menuCliente)).Click();
+            ExtentReportManager.LogInfo("Abrimos el menu de usuario");
             Thread.Sleep(1500);
             Wait.Until(ExpectedConditions.ElementToBeClickable(pageFactura)).Click();
+            ExtentReportManager.LogInfo("Verificamos la factura por calle y fecha");
             Thread.Sleep(5000);
         }
 
